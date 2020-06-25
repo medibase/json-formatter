@@ -172,7 +172,7 @@ angular.module('jsonFormatter', ['RecursionHelper'])
 
     scope.openLink = function (isUrl) {
       if(isUrl) {
-        window.location.href = scope.json;
+        window.open(scope.json, "_blank");
       }
     };
 
